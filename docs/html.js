@@ -39,10 +39,11 @@ class Image extends Webponent{
   genHTML(){
     this.HTML = createDiv();
     this.HTML.parent(this.parent.HTML);
-
     this.HTML.style('width: ' + this.w + 'px');
     this.HTML.style('height: ' + this.h + 'px');
+    this.HTML.style('border-radius: 5px;')
     this.HTML.style('overflow: hidden');
+    
     let imgInteraction;
     if(this.purpose === 'l'){
       imgInteraction = createA(this.func, '', "_blank" );
