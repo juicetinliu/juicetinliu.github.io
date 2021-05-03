@@ -1,6 +1,6 @@
 let main;
 
-let repos = ["UnderSea", "MazeGen", "BlehSim", "ColorPicker"];
+let repos = [["UnderSea", "An underwater adventure"], ["MazeGen", "Maze generation and pathfinding"], ["BlehSim", "A little virus simulation"], ["ColorPicker", "RGB/HSV to color name converter"], ["Webponents", "A component based based based based based based html wrapper for P5.js"]];
 
 function setup() {
   setupHTML();
