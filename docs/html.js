@@ -99,7 +99,7 @@ class Card extends Webponent{
     this.HTML.style('position: relative');
     
 
-    this.HTML.attribute('onclick', "gtag('event', 'click', {'event_category': 'button', 'event_label': '" + this.htxt[0] + "'});");
+    // this.HTML.attribute('onclick', "gtag('event', 'click', {'event_category': 'button', 'event_label': '" + this.htxt[0] + "'});");
     
     let imgInteraction;
     if(this.purpose === 'l'){
