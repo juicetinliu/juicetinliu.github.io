@@ -1,27 +1,33 @@
+:root{
+    --fade-time: 0.5s;
+    --scale-factor: 1.05;
+    --opacity-change: 0.3;
+}
+
 .cardimg{
     position: absolute;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all var(--fade-time) ease-in-out;
+    -moz-transition: all var(--fade-time) ease-in-out;
+    -ms-transition: all var(--fade-time) ease-in-out;
+    -o-transition: all var(--fade-time) ease-in-out;
+    transition: all var(--fade-time) ease-in-out;
 }
 
 .card:hover .cardimg{
-    opacity: 0.3;
-    -webkit-transform:scale(1.15);
-    -moz-transform:scale(1.15);
-    -ms-transform:scale(1.15);
-    -o-transform:scale(1.15);
-    transform:scale(1.15);
+    opacity: var(--opacity-change);
+    -webkit-transform:scale(var(--scale-factor));
+    -moz-transform:scale(var(--scale-factor));
+    -ms-transform:scale(var(--scale-factor));
+    -o-transform:scale(var(--scale-factor));
+    transform:scale(var(--scale-factor));
 }
   
 .card:hover .cardimg{
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all var(--fade-time) ease-in-out;
+    -moz-transition: all var(--fade-time) ease-in-out;
+    -ms-transition: all var(--fade-time) ease-in-out;
+    -o-transition: all var(--fade-time) ease-in-out;
+    transition: all var(--fade-time) ease-in-out;
 }
 
 .cardtxt{
@@ -36,12 +42,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:100%;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    height: 100%;
+    -webkit-transition: all var(--fade-time) ease-in-out;
+    -moz-transition: all var(--fade-time) ease-in-out;
+    -ms-transition: all var(--fade-time) ease-in-out;
+    -o-transition: all var(--fade-time) ease-in-out;
+    transition: all var(--fade-time) ease-in-out;
 }
 
 .card:hover .cardtxtwrap{
@@ -49,9 +55,9 @@
 }
   
 .card:hover .cardtxtwrap{
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all var(--fade-time) ease-in-out;
+    -moz-transition: all var(--fade-time) ease-in-out;
+    -ms-transition: all var(--fade-time) ease-in-out;
+    -o-transition: all var(--fade-time) ease-in-out;
+    transition: all var(--fade-time) ease-in-out;
 }
