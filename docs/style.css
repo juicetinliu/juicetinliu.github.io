@@ -41,6 +41,9 @@
     -ms-transform: scale(var(--scale-factor));
     -o-transform: scale(var(--scale-factor));
     transform: scale(var(--scale-factor));
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 .cardtxt{

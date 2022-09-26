@@ -103,7 +103,7 @@ class Card extends Webponent{
     description.style('font-size: 14px');
             
     let imgInteraction;
-    imgInteraction = createA(this.func, '');
+    imgInteraction = createA(this.func, '', '_blank');
     imgInteraction.class('cardlink');
     imgInteraction.parent(this.HTML);
     imgInteraction.attribute('title', this.htxt[0] + ": " + this.htxt[1]);
