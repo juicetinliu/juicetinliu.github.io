@@ -35,12 +35,12 @@ class Showcase{
         break;
 
       case ShowcaseType.WEBSITE:
-        image = `https://raw.githubusercontent.com/juicetinliu/juicetinliu.github.io/main/docs/${name}_header.png`;
+        image = `assets/headers/${name}_header.png`
         link = this.link;
         break;
 
       case ShowcaseType.YOUTUBE:
-        image = `assets/headers/${title}_header.png`
+        image = `assets/headers/${name}_header.png`
         link = this.link;
         break;
 
@@ -49,7 +49,7 @@ class Showcase{
 
       default:
     }
-
+    // Header images are 600x400 pixels!
     return {title, description, image, link};
   }
 }
