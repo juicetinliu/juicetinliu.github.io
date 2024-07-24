@@ -4,12 +4,17 @@
     --opacity-change: 0.15;
 }
 
-.card:hover{
-    -webkit-transition: all var(--fade-time) ease-in-out;
-    -moz-transition: all var(--fade-time) ease-in-out;
-    -ms-transition: all var(--fade-time) ease-in-out;
-    -o-transition: all var(--fade-time) ease-in-out;
-    transition: all var(--fade-time) ease-in-out;
+.card:hover, .card:focus-within {
+    outline: 3px solid white;
+    box-shadow: 0px 0px 20px 30px rgba(255, 255, 255, 0.5);
+}
+
+.card:hover, .card:focus-within{
+    -webkit-transition: all var(--fade-time) ease-in-out, outline 0s, box-shadow 0s;
+    -moz-transition: all var(--fade-time) ease-in-out, outline 0s, box-shadow 0s;
+    -ms-transition: all var(--fade-time) ease-in-out, outline 0s, box-shadow 0s;
+    -o-transition: all var(--fade-time) ease-in-out, outline 0s, box-shadow 0s;
+    transition: all var(--fade-time) ease-in-out, outline 0s, box-shadow 0s;
 }
 
 .cardlink{
@@ -21,7 +26,11 @@
     transition: all var(--fade-time) ease-in-out;
 }
 
-.card:hover .cardlink{
+.cardlink:focus{
+    outline: none;
+}
+
+.card:hover .cardlink, .card:focus-within .cardlink{
     box-shadow: inset -10px -10px 15px rgba(255,255,255,0.5), inset 10px 10px 15px rgba(100,70,70,0.12);
 }
 
@@ -34,7 +43,7 @@
     transition: all var(--fade-time) ease-in-out;
 }
 
-.card:hover .cardimg{
+.card:hover .cardimg, .card:focus-within .cardimg{
     opacity: var(--opacity-change);
     -webkit-transform: scale(var(--scale-factor));
     -moz-transform: scale(var(--scale-factor));
@@ -70,6 +79,6 @@
     transition: all var(--fade-time) ease-in-out;
 }
 
-.card:hover .cardtxtwrap{
+.card:hover .cardtxtwrap, .card:focus-within .cardtxtwrap{
     opacity: 1;
 }
